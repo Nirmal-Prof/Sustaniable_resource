@@ -1,0 +1,1 @@
+This project is designed to monitor and manage renewable energy generation using a data warehouse. It enables users to track energy production from renewable sources like solar, wind, and hydro in real-time. The system is built with Flask (Python backend), MySQL (database), and HTML/CSS (frontend).
