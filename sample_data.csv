@@ -1,0 +1,10 @@
+source,location,date,energy_kwh
+Solar,California,2025-03-01,1200.5
+Wind,Texas,2025-03-02,3200.8
+Hydro,New York,2025-03-03,2100.3
+Solar,Nevada,2025-03-04,980.6
+Wind,Illinois,2025-03-05,2750.2
+Hydro,Washington,2025-03-06,1900.4
+Solar,Florida,2025-03-07,1500.7
+Wind,Ohio,2025-03-08,3300.9
+Hydro,Colorado,2025-03-09,2200.1

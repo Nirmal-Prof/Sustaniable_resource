@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renewable Energy Monitoring</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Renewable Energy Generation Data</h1>
+    
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".csv" required>
+        <button type="submit">Upload CSV</button>
+    </form>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Source</th>
+                <th>Location</th>
+                <th>Date</th>
+                <th>Energy (kWh)</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in energy_data %}
+            <tr>
+                <td>{{ row.id }}</td>
+                <td>{{ row.source }}</td>
+                <td>{{ row.location }}</td>
+                <td>{{ row.date }}</td>
+                <td>{{ row.energy_kwh }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
